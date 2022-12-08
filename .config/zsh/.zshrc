@@ -58,7 +58,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +97,6 @@ alias repo="ghq"
 
 # dotfiles
 alias config="/usr/bin/git --git-dir=$GHQ_ROOT/github.com/112358fn/dotfiles/.git --work-tree=$GHQ_ROOT/github.com/112358fn/dotfiles"
+
+# Autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
