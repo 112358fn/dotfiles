@@ -100,3 +100,5 @@ alias config="/usr/bin/git --git-dir=$GHQ_ROOT/github.com/112358fn/dotfiles/.git
 
 # Autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
+[ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
+
