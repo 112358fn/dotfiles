@@ -91,6 +91,10 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
 
+#GO
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # GHQ
 export GHQ_ROOT="$HOME/Developer"
 alias repo="ghq"
