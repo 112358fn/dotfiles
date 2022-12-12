@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/nord.yml
+  - ~/.config/alacritty/dracula.yml
 font:
   normal:
     family: Hack
