@@ -1,0 +1,9 @@
+[init]
+	defaultBranch = main
+[user]
+	email = 112358.fn@gmail.com
+	name = Alvaro Alonso
+[push]
+	default = current
+[credential]
+	helper = store
