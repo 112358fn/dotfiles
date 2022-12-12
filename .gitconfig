@@ -7,3 +7,7 @@
 	default = current
 [credential]
 	helper = store
+[core]
+  # Global .gitignore file
+  excludesfile = ~/.gitignore
+  editor = /usr/local/bin/nvim
