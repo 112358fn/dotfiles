@@ -100,7 +100,8 @@ export GHQ_ROOT="$HOME/Developer"
 alias repo="ghq"
 
 # dotfiles
-alias config="/usr/bin/git --git-dir=$GHQ_ROOT/github.com/112358fn/dotfiles/.git --work-tree=$GHQ_ROOT/github.com/112358fn/dotfiles"
+export DOT_FILES=$GHQ_ROOT/github.com/112358fn/dotfiles
+alias config="/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
 
 # Autojump
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
