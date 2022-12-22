@@ -107,3 +107,5 @@ alias config="/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 [ -f /usr/share/autojump/autojump.sh ] && . /usr/share/autojump/autojump.sh
 
+# Dev
+export DEV=$HOME/Developer
