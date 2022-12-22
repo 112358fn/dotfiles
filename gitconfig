@@ -8,6 +8,9 @@
 [credential]
 	helper = store
 [core]
-  # Global .gitignore file
-  excludesfile = ~/.gitignore
-  editor = /usr/local/bin/nvim
+	# Global .gitignore file
+	excludesfile = ~/.gitignore
+	editor = /usr/local/bin/nvim
+
+[url "git@github.com:volvo-cars/mlops-toolkit"]
+	insteadOf = https://github.com/volvo-cars/mlops-toolkit
