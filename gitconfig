@@ -10,7 +10,7 @@
 [core]
 	# Global .gitignore file
 	excludesfile = ~/.gitignore
-	editor = /usr/local/bin/nvim
+	editor = nvim
 
 [url "git@github.com:volvo-cars/mlops-toolkit"]
 	insteadOf = https://github.com/volvo-cars/mlops-toolkit

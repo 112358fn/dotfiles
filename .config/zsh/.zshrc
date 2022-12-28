@@ -109,3 +109,19 @@ alias config="/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
 
 # Dev
 export DEV=$HOME/Developer
+
+case `uname` in
+  Darwin)
+    # commands for OS X go here
+    # Pinentry
+    alias pinentry='pinentry-mac'
+    alias timeout='gtimeout'
+  ;;
+  Linux)
+    # commands for Linux go here
+  ;;
+  FreeBSD)
+    # commands for FreeBSD go here
+  ;;
+esac
+
