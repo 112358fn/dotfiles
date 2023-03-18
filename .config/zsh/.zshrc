@@ -119,9 +119,11 @@ case `uname` in
   ;;
   Linux)
     # commands for Linux go here
+    export PATH=$PATH:/usr/local/bin/nvim/bin
   ;;
   FreeBSD)
     # commands for FreeBSD go here
   ;;
 esac
+
 
