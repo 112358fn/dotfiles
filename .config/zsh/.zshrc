@@ -120,6 +120,8 @@ case `uname` in
   Linux)
     # commands for Linux go here
     export PATH=$PATH:/usr/local/bin/nvim/bin
+    source /usr/share/doc/fzf/examples/key-bindings.zsh
+    source /usr/share/doc/fzf/examples/completion.zsh
   ;;
   FreeBSD)
     # commands for FreeBSD go here
