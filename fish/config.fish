@@ -15,6 +15,8 @@ if status is-interactive
     alias config "/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
     # code
     bind \co "code (repo list -p | fzf )"
+    # Abbreviations
+    abbr gst 'git status'
 end
 
 # starship
