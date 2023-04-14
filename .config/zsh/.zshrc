@@ -120,7 +120,10 @@ case `uname` in
   ;;
   Linux)
     # commands for Linux go here
-    export PATH=$PATH:/usr/local/bin/nvim/bin
+    export PATH=$PATH:/usr/local/bin/nvim/bin:$HOME/zig:/usr/local/go/bin
+    if [ -z $DISPLAY ] && [ "$XDG_VTNR" -eq 1 ]; then
+	exec startx
+    fi
   ;;
   FreeBSD)
     # commands for FreeBSD go here
