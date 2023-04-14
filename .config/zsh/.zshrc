@@ -116,6 +116,7 @@ case `uname` in
     # Pinentry
     alias pinentry='pinentry-mac'
     alias timeout='gtimeout'
+    export PATH=$PATH:$HOME/.local/bin
   ;;
   Linux)
     # commands for Linux go here
