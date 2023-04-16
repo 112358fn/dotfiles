@@ -116,10 +116,14 @@ case `uname` in
     # Pinentry
     alias pinentry='pinentry-mac'
     alias timeout='gtimeout'
+    export PATH=$PATH:$HOME/.local/bin
   ;;
   Linux)
     # commands for Linux go here
-    export PATH=$PATH:/usr/local/bin/nvim/bin
+    export PATH=$PATH:/usr/local/bin/nvim/bin:$HOME/zig:/usr/local/go/bin
+    if [ -z $DISPLAY ] && [ "$XDG_VTNR" -eq 1 ]; then
+	    exec startx
+    fi
     source /usr/share/doc/fzf/examples/key-bindings.zsh
     source /usr/share/doc/fzf/examples/completion.zsh
   ;;
