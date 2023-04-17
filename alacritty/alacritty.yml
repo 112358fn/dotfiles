@@ -2,16 +2,15 @@ import:
   - ~/.config/alacritty/dracula.yml
 font:
   normal:
-    family: Hack
+    family: Hack NFM
     style: Regular
-  bold:
-    family: Hack
-    style: Bold
-  italic:
-    family: Hack
-    style: Italic
-  bold_italic:
-    family: Hack
-    style: Bold Italic
   size: 11.0
+shell:
+  program: /usr/bin/tmux 
+  args:
+    - new-session
+    - -A
+    - -D
+    - -s
+    - main
 live_config_reload: true
