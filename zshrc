@@ -1,18 +1,14 @@
-# User configuration
+# oh-my-zsh
+export ZSH="$HOME/.config/zsh/oh-my-zsh"
+ZSH_THEME=""
+plugins=(git zsh-syntax-highlighting)
+source $ZSH/oh-my-zsh.sh
 
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
+# user
 export LANG=en_US.UTF-8
+export EDITOR='nvim'
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
-else
-  export EDITOR='nvim'
-fi
-
-#PYENV
+# PYENV
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -39,7 +35,7 @@ case `uname` in
     # Pinentry
     alias pinentry='pinentry-mac'
     alias timeout='gtimeout'
-    export PATH=$PATH:$HOME/.local/bin
+    export PATH=$PATH:$HOME/.local/bin:/opt/homebrew/bin
   ;;
   Linux)
     # commands for Linux go here
