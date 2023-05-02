@@ -29,6 +29,10 @@ alias repo="ghq"
 export DOT_FILES=$GHQ_ROOT/github.com/112358fn/dotfiles
 alias config="/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
 
+# zk notebook
+export ZK_NOTEBOOK_DIR=~/Developer/github.com/112358fn/notes
+alias notes="zk"
+
 case `uname` in
   Darwin)
     # commands for OS X go here
@@ -43,7 +47,7 @@ case `uname` in
     if [ -z $DISPLAY ] && [ "$XDG_VTNR" -eq 1 ]; then
     	exec startx
     fi
-  ;;  
+  ;;
 esac
 
 # Starship
