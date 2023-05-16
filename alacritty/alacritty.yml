@@ -2,7 +2,7 @@ import:
   - ~/.config/alacritty/dracula.yml
 font:
   normal:
-    family: Hack NFM
+    family: Hack Nerd Font Mono
     style: Regular
   size: 11.0
 shell:
