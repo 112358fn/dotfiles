@@ -17,3 +17,5 @@
 
 [url "git@github.com:volvo-cars/aaai-data-io.git"]
 	insteadOf = https://github.com/volvo-cars/aaai-data-io.git
+[commit]
+	gpgsign = true
