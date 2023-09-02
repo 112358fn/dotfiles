@@ -69,14 +69,14 @@
   /*  Width of the URL Bar for the Oneline layout
    *  If enabled the max-width is applied on focus
    *  otherwise the URL Bar will always be it's min-width
-   */ --uc-urlbar-min-width: 0vw;
+   */ --uc-urlbar-min-width: 35vw;
       --uc-urlbar-max-width: 35vw;
 
   /*  Position of the URL Bar
    *  possible values:
    *  1 – tabs on the right
    *  3 – tabs on the left
-   */ --uc-urlbar-position: 1;
+   */ --uc-urlbar-position: 3;
 
   /*  Firefox can be a little wonky with the vertical
    *  URL Bar placement. Change this variable to adapt
@@ -166,38 +166,4 @@
   --panel-width: calc(100vw - 40px);
   --panel-hide-offset: -30px;
   --opacity-when-hidden: 0.05;
-}
-
-
-/* Auto-hide address bar */
-#navigator-toolbox{
-position: fixed !important;
-/* Comment out following line to get 'slide-page-down' reveal, like in F11 fullscreen mode */ 
-/* display: block;  */
-transition: margin-top 82ms 33ms linear, opacity 82ms 33ms linear !important; 
-z-index: 1;
-opacity: 1;
-/* Spacing on the left for sidebar */
-margin-left: var(--sidebar-width);
-/* Disabled the borders, as the bottom one seemed to have unwanted top padding sometimes */
-border: none !important;
-}
-
-#navigator-toolbox,
-#navigator-toolbox > *{
-/* Reduced width for panel in order to not overflow the screen on the right side */
- width:  var(--panel-width); 
-}
-
-#navigator-toolbox:not(:focus-within):not(:hover){
-margin-top: var(--panel-hide-offset);
-opacity: var(--opacity-when-hidden);
-}
-
-
-/* Disable auto-hiding when in 'customize' mode */
-:root[customizing] #navigator-toolbox{
-position: relative !important;
-opacity: 1 !important;
-margin-top: 0px;
 }
