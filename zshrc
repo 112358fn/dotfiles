@@ -1,5 +1,14 @@
+# zillij
+export ZELLIJ_AUTO_ATTACH=false
+export ZELLIJ_AUTO_EXIT=true
+eval "$(zellij setup --generate-auto-start zsh)"
+
 # Starship
 eval "$(starship init zsh)"
+
+# antidote
+source $HOME/.antidote/antidote.zsh
+antidote load $HOME/.zsh_plugins.txt
 
 # user
 export LANG=en_US.UTF-8
@@ -23,6 +32,13 @@ alias notes="zk"
 export DOT_FILES=$GHQ_ROOT/github.com/112358fn/dotfiles
 alias config="/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
 
+# GPG-SSH Agent
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+gpg-connect-agent updatestartuptty /bye > /dev/null
+
+# OS specific
 case `uname` in
   Darwin)
     # commands for OS X go here
@@ -35,9 +51,3 @@ case `uname` in
     # commands for Linux go here
   ;;
 esac
-
-# GPG SSH Agent
-export GPG_TTY="$(tty)"
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent
-gpg-connect-agent updatestartuptty /bye > /dev/null
