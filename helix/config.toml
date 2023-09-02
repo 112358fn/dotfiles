@@ -1,0 +1,5 @@
+theme = "catppuccin_mocha"
+
+[editor]
+color-modes = true
+cursorline = true
