@@ -1,0 +1,4 @@
+[url "git@github.com:volvo-cars/mlops-toolkit"]
+	insteadOf = https://github.com/volvo-cars/mlops-toolkit
+[url "git@github.com:volvo-cars/aaai-data-io.git"]
+	insteadOf = https://github.com/volvo-cars/aaai-data-io.git
