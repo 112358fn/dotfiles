@@ -10,13 +10,12 @@ if status is-interactive
     # GHQ
     set --export GHQ_ROOT $HOME/Developer
     alias repo ghq
-    # dotfiles
-    set DOT_FILES $GHQ_ROOT/github.com/112358fn/dotfiles
-    alias config "/usr/bin/git --git-dir=$DOT_FILES/.git --work-tree=$DOT_FILES"
+    # ZK
+    set -gx ZK_NOTEBOOK_DIR $GHQ_ROOT/github.com/112358fn/notes
     # code
     bind \co "code (repo list -p | fzf )"
-    # Abbreviations
-    abbr gst 'git status'
+    
+    # OS specific
     switch (uname)
         case Darwin
             alias pinentry pinentry-mac
