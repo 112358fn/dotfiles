@@ -5,6 +5,7 @@
 	name = Alvaro Alonso
 [push]
 	default = current
+	autoSetupRemote=true
 [credential]
 	helper = store
 [core]
