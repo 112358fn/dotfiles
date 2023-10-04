@@ -7,9 +7,10 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
+$python\
+$conda\
 $cmd_duration\
 $line_break\
-$python\
 $character"""
 
 [directory]
@@ -22,6 +23,9 @@ vimcmd_symbol = "[❮](green)"
 
 [python]
 format = "[$virtualenv]($style) "
+style = "bright-green"
+[conda]
+format = '[$symbol$environment]($style) '
 style = "bright-green"
 
 [palettes.catppuccin_mocha]
