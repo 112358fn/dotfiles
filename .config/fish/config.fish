@@ -1,9 +1,9 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set -g fish_autosuggestion_enabled 0
-    # pyenv
-    set -Ux PYENV_ROOT $HOME/.pyenv
-    fish_add_path $PYENV_ROOT/bin
+    ## pyenv
+    #set -Ux PYENV_ROOT $HOME/.pyenv
+    #fish_add_path $PYENV_ROOT/bin
     # GO
     set --export GOPATH $HOME/go
     fish_add_path $GOPATH/bin
@@ -13,7 +13,7 @@ if status is-interactive
     # ZK
     set -gx ZK_NOTEBOOK_DIR $GHQ_ROOT/github.com/112358fn/notes
     # code
-    bind \co "code (repo list -p | fzf )"
+    #bind \co "code (repo list -p | fzf )"
     
     # OS specific
     switch (uname)
@@ -21,6 +21,7 @@ if status is-interactive
             alias pinentry pinentry-mac
             alias timeout gtimeout
             fish_add_path $HOME/.local/bin /opt/homebrew/bin
+            fish_add_path /usr/local/bin
     end
 end
 
