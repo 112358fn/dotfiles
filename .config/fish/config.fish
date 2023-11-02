@@ -23,6 +23,8 @@ if status is-interactive
             fish_add_path $HOME/.local/bin /opt/homebrew/bin
             fish_add_path /usr/local/bin
             fish_add_path $HOME/.cargo/bin
+        case Linux
+            direnv hook fish | source
     end
 end
 
