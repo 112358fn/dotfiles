@@ -1,0 +1,11 @@
+# Config
+yabai -m config layout              bsp
+yabai -m config window_gap          5
+yabai -m config focus_follows_mouse off
+# Rules
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^System Preferences$" manage=off
+yabai -m rule --add app="^BIG-IP Edge Client$" manage=off
+yabai -m rule --add app="^Pritunl Client$" manage=off
+yabai -m rule --add app="^Microsoft Teams$" manage=off
+yabai -m rule --add app="^Slack$" manage=off
