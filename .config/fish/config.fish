@@ -26,16 +26,16 @@ if status is-interactive
         case Linux
             direnv hook fish | source
     end
+    #GPG SSH Agent
+    set -gx GPG_TTY (tty)
+    set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+    gpgconf --launch gpg-agent
+    gpg-connect-agent updatestartuptty /bye > /dev/null
 end
 
 # Theme
 starship init fish | source
 
-#GPG SSH Agent
-set -gx GPG_TTY (tty)
-set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
-gpgconf --launch gpg-agent
-gpg-connect-agent updatestartuptty /bye > /dev/null
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
