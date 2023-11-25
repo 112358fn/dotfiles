@@ -9,9 +9,9 @@ if status is-interactive
     fish_add_path $GOPATH/bin
     # GHQ
     set --export GHQ_ROOT $HOME/Developer
-    alias repo ghq
+    # alias repo ghq
     # ZK
-    set -gx ZK_NOTEBOOK_DIR $GHQ_ROOT/github.com/112358fn/notes
+    set -gx ZK_NOTEBOOK_DIR $HOME/Nextcloud/Notes
     # code
     #bind \co "code (repo list -p | fzf )"
     
@@ -23,6 +23,7 @@ if status is-interactive
             fish_add_path $HOME/.local/bin /opt/homebrew/bin
             fish_add_path /usr/local/bin
             fish_add_path $HOME/.cargo/bin
+            tkn completion fish | source
         case Linux
             direnv hook fish | source
     end
@@ -44,3 +45,4 @@ if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
 end
 # <<< conda initialize <<<
 
+#launchctl unload /Library/LaunchAgents/net.volvocars.DisplayLinkUserAgent.plist
