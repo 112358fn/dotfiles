@@ -1,2 +1,0 @@
-# options: zoom-parent, zoom-fullscreen, native-fullscreen
-alt - w : yabai -m window --toggle zoom-fullscreen
