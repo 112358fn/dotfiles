@@ -9,6 +9,8 @@ $git_state\
 $git_status\
 $python\
 $conda\
+$rust\
+$nix_shell\
 $cmd_duration\
 $line_break\
 $character"""
