@@ -6,7 +6,3 @@ size = 10.0
 [font.normal]
 family = "Hack Nerd Font Mono"
 style = "Regular"
-
-[shell]
-args = ["attach", "-c", "main"]
-program = "zellij"
