@@ -1,8 +1,0 @@
-import = ["/home/alvaro/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
-
-[font]
-size = 10.0
-
-[font.normal]
-family = "Hack Nerd Font Mono"
-style = "Regular"
