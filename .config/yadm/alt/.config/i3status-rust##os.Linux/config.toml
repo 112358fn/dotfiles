@@ -1,16 +1,10 @@
-icons_format = "{icon}"
+icons_format = "{icon} "
 
 [theme]
 theme = "ctp-mocha"
-# [theme.overrides]
-# idle_bg = "#123456"
-# idle_fg = "#abcdef"
 
 [icons]
 icons = "awesome4"
-[icons.overrides]
-bat = ["|E|", "|_|", "|=|", "|F|"]
-bat_charging = "|^| "
 
 [[block]]
 block = "cpu"
@@ -31,6 +25,10 @@ format = " $icon $mem_used.eng(w:2) "
 format_alt = " $icon_swap $swap_used_percents.eng(w:2) "
 
 [[block]]
+block = "net"
+format = "$icon $ip"
+
+[[block]]
 block = "sound"
 [[block.click]]
 button = "left"
@@ -40,3 +38,7 @@ cmd = "pavucontrol"
 block = "time"
 interval = 5
 format = " $timestamp.datetime(f:'%a %d/%m %R') "
+
+[[block]]
+block = "battery"
+format = " $icon  $percentage "
